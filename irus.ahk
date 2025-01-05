@@ -10,7 +10,7 @@ CoordMode, Mouse, Screen
 if (A_ScreenDPI <> 96)
 {
 PercentageScaling := Floor(100 * (A_ScreenDPI / 96))
-MsgBox, 4, , % "Required Scaling: 100%`nCurrent Scaling: " PercentageScaling . "%`n`nScaling NEEDS to be 100%`n`nPress YES to change"
+MsgBox, 4, , % "Required Scaling: 100%`nCurrent Scaling:100% " PercentageScaling . "%`n`nScaling NEEDS to be 100%`n`nPress YES to change"
 IfMsgBox Yes
 {
 send {lwin}
@@ -28,8 +28,6 @@ sleep 125
 send {shift up}
 sleep 125
 send {enter}
-MsgBox, % "Please change SCALE from " PercentageScaling "% to 100%`n`nNOTE, IF YOU ARE NOT AT THE RESOLUTION SCALE SETTINGS, THEN MANUALLY NAVIGATE THERE YOURSELF"
-exitapp
 }
 else
 {
