@@ -28,8 +28,6 @@ sleep 125
 send {shift up}
 sleep 125
 send {enter}
-MsgBox, % "Please change SCALE from " PercentageScaling "% to 100%`n`nNOTE, IF YOU ARE NOT AT THE RESOLUTION SCALE SETTINGS, THEN MANUALLY NAVIGATE THERE YOURSELF"
-exitapp
 }
 else
 {
@@ -81,7 +79,7 @@ CameraLeft := 99999
 CameraRight := 99999
 CameraTop := 99999
 CameraBottom := 99999
-ShakeMode := "Click"
+ShakeMode := "Navigation"
 ShakeWhiteTolerance := 0
 ShakeLeft := 99999
 ShakeRight := 99999
